@@ -19,7 +19,7 @@ function M.set_tree_highlights()
     end
     -- set configured icon highlights
     for icon, hl in pairs(lib_icons.icon_hls) do
-        vim.cmd(string.format("syn match %s /%s/", hl, icon_set[icon]))
+        vim.cmd(string.format("syn match %s /\\<%s\\>/", hl, icon_set[icon]))
     end
     -- set configured symbol highlight
     vim.cmd(string.format("syn match %s /%s/", lib_hi.hls.SymbolHL, [[\w]]))
@@ -27,10 +27,10 @@ function M.set_tree_highlights()
     vim.cmd(string.format("syn match %s /%s/", lib_hi.hls.SymbolHL, [[\-]]))
     vim.cmd(string.format("syn match %s /%s/", lib_hi.hls.SymbolHL, [[\\_]]))
     -- set configured expanded indicator highlights
-    vim.cmd(string.format("syn match %s /%s/", lib_hi.hls.ExpandedGuideHL, icon_set["Expanded"]))
-    vim.cmd(string.format("syn match %s /%s/", lib_hi.hls.CollapsedGuideHL, icon_set["Collapsed"]))
+    vim.cmd(string.format("syn match %s /\\<%s\\>/", lib_hi.hls.ExpandedGuideHL, icon_set["Expanded"]))
+    vim.cmd(string.format("syn match %s /\\<%s\\>/", lib_hi.hls.CollapsedGuideHL, icon_set["Collapsed"]))
     -- set configured indent guide highlight
-    vim.cmd(string.format("syn match %s /%s/", lib_hi.hls.IndentGuideHL, icon_set["Guide"]))
+    vim.cmd(string.format("syn match %s /\\<%s\\>/", lib_hi.hls.IndentGuideHL, icon_set["Guide"]))
 end
 
 -- inside_component_win is a helper functions which
