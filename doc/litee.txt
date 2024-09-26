@@ -41,7 +41,7 @@ There are several official litee plugins which can act as a reference for implem
 additional.
 
 - Calltree
-https://github.com/ldelossa/litee-calltree
+https://github.com/ldelossa/litee-calltree.nvim
 
 Analogous to VSCode's "Call Hierarchy" tool, this feature exposes an explorable tree
 of incoming or outgoing calls for a given symbol. 
@@ -50,7 +50,7 @@ Unlike other Neovim plugins, the tree can be expanded and collapsed to discover
 "callers-of-callers" and "callees-of-callees" until you hit a leaf.
 
 - Symboltree
-https://github.com/ldelossa/litee-symboltree
+https://github.com/ldelossa/litee-symboltree.nvim
 
 Analogous to VSCode's "Outline" tool, this feature exposes a live tree of document
 symbols for the current file. 
@@ -58,7 +58,7 @@ symbols for the current file.
 The tree is updated as you move around and change files.
 
 - Filetree
-https://github.com/ldelossa/litee-filetree
+https://github.com/ldelossa/litee-filetree.nvim
 
 Analogous to VSCode's "Explorer", this feature exposes a full feature file explorer 
 which supports recursive copies, recursive moves, and proper renaming of a file 
